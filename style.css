@@ -1,3 +1,30 @@
-*{
-    margin: 0px;
+* {
+  margin: 0px;
+}
+
+/* organization of the global webpage */
+#webpage {
+  margin: 16px;
+  width: 95%;
+  display: grid;
+  grid-template-areas:
+    "head head"
+    "main main"
+    "footer foot";
+}
+
+#webpage > header {
+  grid-area: head;
+}
+
+#webpage > nav {
+  grid-area: nav;
+}
+
+#webpage > main {
+  grid-area: main;
+}
+
+#webpage > footer {
+  grid-area: foot;
 }
