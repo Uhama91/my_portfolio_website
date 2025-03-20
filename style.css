@@ -54,5 +54,23 @@ nav {
 
 /* main organization */
 
-main {
+.intro-placeholder-container {
+  display: grid;
+  grid-template-areas: "a b b b";
+  margin: 0px 0px 16px 0px;
+}
+
+.class {
+  grid-area: a;
+}
+
+.placeholder {
+  grid-area: b;
+  margin-left: 10px;
+}
+
+.placeholder-img {
+  width: 100%;
+  border: 2px rgb(100, 100, 197) solid;
+  border-radius: 5% 5% 5% 5%;
 }
