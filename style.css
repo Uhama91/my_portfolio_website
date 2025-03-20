@@ -4,8 +4,8 @@
 
 /* organization of the global webpage */
 #webpage {
-  margin: 32px auto 32px auto;
-  width: 70%;
+  margin: 0px auto 0px auto;
+  width: 100%;
   display: grid;
   grid-template-areas:
     "head head"
@@ -15,6 +15,7 @@
 
 #webpage > header {
   grid-area: head;
+  padding: 10px 30px 0px 30px;
 }
 
 #webpage > nav {
@@ -29,12 +30,18 @@
   grid-area: foot;
 }
 
+header,
+main {
+  background-color: #1f2937;
+  color: white;
+}
+
 /* organize the header section */
 
 header {
   display: grid;
   grid-template-areas: "logo nav";
-  margin: 0px 0px 16px 0px;
+  margin: px 0px 0px 0px;
 }
 
 .logo-container {
@@ -45,6 +52,11 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  color: white;
+}
+
+nav > a {
+  color: white;
 }
 
 .logo {
@@ -57,7 +69,8 @@ nav {
 .intro-placeholder-container {
   display: grid;
   grid-template-areas: "a b b b";
-  margin: 0px 0px 16px 0px;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 30px 10px 30px;
 }
 
 .class {
@@ -66,11 +79,36 @@ nav {
 
 .placeholder {
   grid-area: b;
-  margin-left: 10px;
+  margin: 10px 10px 0px 10px;
+  height: 150px;
 }
 
 .placeholder-img {
   width: 100%;
   border: 2px rgb(100, 100, 197) solid;
   border-radius: 5% 5% 5% 5%;
+}
+
+/* section random information with image of my projects*/
+
+.random-info {
+  background-color: white;
+  height: 200px;
+  padding: 10px 30px 10px 30px;
+}
+
+/* section quotes */
+
+.quote {
+  padding: 10px 30px 10px 30px;
+}
+
+/* section form */
+.form {
+  padding: 10px 30px 10px 30px;
+}
+
+/* container-contact section */
+.container-contact {
+  padding: 10px 30px 10px 30px;
 }
