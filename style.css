@@ -1,6 +1,7 @@
 * {
   margin: 0px 0px 0px 0px;
   font-family: "Roboto", sans-serif;
+  background-color: #1f2937;
 }
 
 /* organization of the global webpage */
@@ -17,6 +18,8 @@
 #webpage > header {
   grid-area: head;
   padding: 10px 80px 0px 80px;
+  margin: 0px auto 0px auto;
+  width: 70%;
 }
 
 #webpage > nav {
@@ -25,6 +28,8 @@
 
 #webpage > main {
   grid-area: main;
+  margin: 0px auto 0px auto;
+  width: 70%;
 }
 
 #webpage > footer {
@@ -76,7 +81,6 @@ nav > a {
   display: grid;
   grid-template-areas: "a b b b";
   margin: 0px 0px 0px 0px;
-  padding: 10px 80px 10px 80px;
 }
 
 .class {
@@ -104,20 +108,68 @@ h1 {
 
 /* section random information with image of my projects*/
 
-.random-info {
-  background-color: white;
+.info-container {
+  background-color: whitesmoke;
   height: 200px;
   padding: 10px 80px 10px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto 0px auto;
 }
 
+.info-item {
+  height: 130px;
+  width: 100px;
+  border: #3882f6 solid 3px;
+  border-radius: 15%;
+}
+
+.img-text-container {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  width: 30%;
+}
+
+.img-text-container > p {
+  background-color: whitesmoke;
+  color: #1f2937;
+  font-size: 12px;
+  padding-top: 8px;
+}
 /* section quotes */
 
-.quote {
+.quote-section {
   padding: 10px 80px 10px 80px;
+  margin: 0px auto 0px auto;
+  background-color: #e5e7eb;
+}
+
+.quote-section > p {
+  background-color: #e5e7eb;
+}
+
+.quote-p {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #1f2937;
+}
+
+.quote-author {
+  color: #1f2937;
+  display: block;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
 }
 
 /* section form */
 .form {
+  background-color: whitesmoke;
   padding: 10px 80px 10px 80px;
 }
 
