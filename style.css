@@ -173,7 +173,11 @@ h1 {
   padding: 10px 80px 10px 80px;
 }
 
+/* footer webpage's part */
 /* container-contact section */
 .container-contact {
   padding: 10px 80px 10px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
