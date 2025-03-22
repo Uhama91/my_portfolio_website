@@ -12,7 +12,7 @@
   grid-template-areas:
     "head head"
     "main main"
-    "footer foot";
+    "foot foot";
 }
 
 #webpage > header {
@@ -34,6 +34,8 @@
 
 #webpage > footer {
   grid-area: foot;
+  margin: 0px auto 16px auto;
+  width: 70%;
 }
 
 header,
@@ -168,16 +170,74 @@ h1 {
 }
 
 /* section form */
-.form {
+
+form {
   background-color: whitesmoke;
-  padding: 10px 80px 10px 80px;
+  padding: 10px 10px 10px 10px;
+  display: grid;
+  grid-template-areas:
+    "fn ln"
+    "ml ml"
+    "rq rq";
+}
+
+.fname {
+  grid-area: fn;
+  background-color: whitesmoke;
+  display: flex;
+  height: 20px;
+  margin-bottom: 8px;
+}
+
+.lname {
+  grid-area: ln;
+  background-color: whitesmoke;
+  display: flex;
+  height: 20px;
+  margin-bottom: 8px;
+}
+
+.mail {
+  grid-area: ml;
+  background-color: whitesmoke;
+  margin-bottom: 8px;
+}
+
+.request {
+  grid-area: rq;
+  background-color: whitesmoke;
+}
+
+.request > label {
+  position: relative;
+  bottom: 40px;
+}
+.request > textarea {
+  height: 100px;
+  width: 80%;
+  background-color: whitesmoke;
+  resize: none;
+}
+
+caption,
+label,
+input {
+  background-color: whitesmoke;
+  color: #1f2937;
 }
 
 /* footer webpage's part */
 /* container-contact section */
 .container-contact {
-  padding: 10px 80px 10px 80px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+}
+
+.contact-item {
+  margin: 8px 8px 0px 0px;
+}
+.contact-item > img {
+  padding: 0px;
+  border: #3882f6 solid 2px;
+  border-radius: 20%;
 }

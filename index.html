@@ -101,20 +101,37 @@
         </section>
 
         <!-- fourth section, a form section to send me request for a job -->
-        <section class="form">
+        <section class="form-section">
           <!-- need input: first name, last name, mail, text field, submit button-->
-          <caption>
-            Complete the form
-          </caption>
-          <form action="">
-            <label for="fname">First name: </label
-            ><input type="text" id="fname" name="fname" />
-            <label for="lname">Last name: </label
-            ><input type="text" id="lname" name="lname" />
-            <label for="mail">Mail: </label
-            ><input type="email" id="mail" name="mail" />
-            <label for="request">Request: </label
-            ><input type="text" id="request" name="request" />
+          <form action="" class="form">
+            <div class="fname">
+              <label for="fname">First name: </label
+              ><input type="text" id="fname" name="fname" required />
+            </div>
+
+            <div class="lname">
+              <label for="lname">Last name: </label
+              ><input type="text" id="lname" name="lname" required />
+            </div>
+
+            <div class="mail">
+              <label for="mail">Mail: </label
+              ><input type="email" id="mail" name="mail" required />
+            </div>
+
+            <div class="request">
+              <label for="request">Request: </label
+              ><textarea
+                name="request"
+                id="request"
+                rows="4"
+                cols="50"
+                placeholder="Write here your request..."
+                required
+              ></textarea>
+            </div>
+
+            <input type="submit" name="submit" id="submit" value="Submit" />
           </form>
         </section>
       </main>
@@ -123,49 +140,48 @@
       <footer>
         <div class="container-contact">
           <!-- imge linkedin -->
-          <div class="contact-item">
-            <a href="">
-              <img
-                src="./images/linkedin_logo.jpg"
-                alt="Linkedin logo"
-                height="60px"
-                width="60px"
-              />
-            </a>
-          </div>
+
+          <button class="contact-item">
+            <img
+              src="./images/linkedin_logo.jpg"
+              alt="Linkedin logo"
+              height="60px"
+              width="60px"
+            />
+          </button>
+
           <!-- img facebook -->
-          <div class="contact-item">
-            <a href="">
-              <img
-                src="./images/facebook_logo.jpg"
-                alt="Facebook logo"
-                height="60px"
-                width="60px"
-              />
-            </a>
-          </div>
+
+          <button class="contact-item">
+            <img
+              src="./images/facebook_logo.jpg"
+              alt="Facebook logo"
+              height="60px"
+              width="60px"
+            />
+          </button>
+
           <!-- img instagram -->
-          <div class="contact-item">
-            <a href="">
-              <img
-                src="./images/instagram_logo.jpg"
-                alt="Instagram logo"
-                height="60px"
-                width="60px"
-              />
-            </a>
-          </div>
+
+          <button class="contact-item">
+            <img
+              src="./images/instagram_logo.jpg"
+              alt="Instagram logo"
+              height="60px"
+              width="60px"
+            />
+          </button>
+
           <!-- img X logo -->
-          <div class="contact-item">
-            <a href="">
-              <img
-                src="./images/x_logo.jpg"
-                alt="X logo"
-                height="60px"
-                width="60px"
-              />
-            </a>
-          </div>
+
+          <button class="contact-item">
+            <img
+              src="./images/x_logo.jpg"
+              alt="X logo"
+              height="60px"
+              width="60px"
+            />
+          </button>
         </div>
       </footer>
     </div>
